@@ -1,0 +1,7 @@
+
+ýG4.%20Software%20Engeneering/getting_started/introduction_to_scala.scala2
+ getting_started/:ï
+ æNo class, trait or object is defined in the compilation unit.
+The incremental compiler cannot record the dependency information in such case.
+Some errors like unused import referring to a non-existent class might not be reported.
+PZ 110CB4F4D12B7FE91011C8F59A99E7F3
