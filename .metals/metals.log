@@ -2379,3 +2379,363 @@ WARNUNG: Unmatched cancel notification for request id 1
 2025.10.16 21:44:16 INFO  shutting down Metals
 2025.10.16 21:44:16 INFO  Shut down connection with build server.
 2025.10.16 21:44:16 INFO  Exiting server
+2025.10.20 09:37:03 INFO  Started: Metals version 1.6.3 in folders 'C:\Users\justi\OneDrive\Desktop\Semester 3' for client Visual Studio Code 1.105.1.
+2025.10.20 09:37:03 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+Okt. 20, 2025 9:37:04 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNUNG: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "textDocument/didOpen",
+  "params": {
+    "textDocument": {
+      "uri": "file:///c%3A/Users/justi/OneDrive/Desktop/Semester%203/4.%20Software%20Engeneering/getting_started/introduction_to_scala.scala",
+      "languageId": "scala",
+      "version": 1,
+      "text": "package getting_started\r\n\r\n// Scala version: 3.7.3\r\n"
+    }
+  }
+}
+java.lang.IllegalStateException: An unexpected exception occurred while executing jsonrpc method public abstract java.util.concurrent.CompletableFuture scala.meta.metals.lsp.TextDocumentService.didOpen(org.eclipse.lsp4j.DidOpenTextDocumentParams)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:73)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:160)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:231)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:198)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+Caused by: java.nio.file.NoSuchFileException: c:\Users\justi\OneDrive\Desktop\Semester 3\4. Software Engeneering\getting_started\introduction_to_scala.scala
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:234)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:380)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:432)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3292)
+	at scala.meta.internal.io.PlatformFileIO$.slurp(PlatformFileIO.scala:42)
+	at scala.meta.internal.io.FileIO$.slurp(FileIO.scala:18)
+	at scala.meta.internal.metals.MetalsLspService.didOpen(MetalsLspService.scala:745)
+	at scala.meta.internal.metals.WorkspaceLspService.didOpen(WorkspaceLspService.scala:469)
+	at scala.meta.metals.lsp.DelegatingScalaService.didOpen(DelegatingScalaService.scala:38)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:65)
+	... 11 more
+
+Okt. 20, 2025 9:37:04 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SCHWERWIEGEND: Internal error: java.util.NoSuchElementException: BatchedFunction
+java.util.concurrent.CompletionException: java.util.NoSuchElementException: BatchedFunction
+	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323)
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:376)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:391)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:752)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:554)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2238)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:517)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+Caused by: java.util.NoSuchElementException: BatchedFunction
+	at scala.meta.internal.metals.BatchedFunction.<init>(BatchedFunction.scala:96)
+	at scala.meta.internal.metals.MetalsLspService.<init>(MetalsLspService.scala:237)
+	at scala.meta.internal.metals.ProjectMetalsLspService.<init>(ProjectMetalsLspService.scala:81)
+	at scala.meta.internal.metals.WorkspaceLspService.createService(WorkspaceLspService.scala:258)
+	at scala.meta.internal.metals.WorkspaceLspService.$anonfun$workspaceFolders$1(WorkspaceLspService.scala:265)
+	at scala.collection.immutable.List.map(List.scala:236)
+	at scala.meta.internal.metals.WorkspaceFolders.initServices(WorkspaceFolders.scala:43)
+	at scala.meta.internal.metals.WorkspaceFolders.<init>(WorkspaceFolders.scala:22)
+	at scala.meta.internal.metals.WorkspaceLspService.<init>(WorkspaceLspService.scala:263)
+	at scala.meta.metals.MetalsLanguageServer.createService(MetalsLanguageServer.scala:219)
+	at scala.meta.metals.MetalsLanguageServer.initialize(MetalsLanguageServer.scala:160)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:128)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:271)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:201)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	... 3 more
+
+Okt. 20, 2025 9:37:04 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SCHWERWIEGEND: Internal error: java.util.NoSuchElementException: BatchedFunction
+java.util.concurrent.CompletionException: java.util.NoSuchElementException: BatchedFunction
+	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323)
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:376)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:391)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:752)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:554)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2238)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:517)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+Caused by: java.util.NoSuchElementException: BatchedFunction
+	at scala.meta.internal.metals.BatchedFunction.<init>(BatchedFunction.scala:96)
+	at scala.meta.internal.metals.MetalsLspService.<init>(MetalsLspService.scala:237)
+	at scala.meta.internal.metals.ProjectMetalsLspService.<init>(ProjectMetalsLspService.scala:81)
+	at scala.meta.internal.metals.WorkspaceLspService.createService(WorkspaceLspService.scala:258)
+	at scala.meta.internal.metals.WorkspaceLspService.$anonfun$workspaceFolders$1(WorkspaceLspService.scala:265)
+	at scala.collection.immutable.List.map(List.scala:236)
+	at scala.meta.internal.metals.WorkspaceFolders.initServices(WorkspaceFolders.scala:43)
+	at scala.meta.internal.metals.WorkspaceFolders.<init>(WorkspaceFolders.scala:22)
+	at scala.meta.internal.metals.WorkspaceLspService.<init>(WorkspaceLspService.scala:263)
+	at scala.meta.metals.MetalsLanguageServer.createService(MetalsLanguageServer.scala:219)
+	at scala.meta.metals.MetalsLanguageServer.initialize(MetalsLanguageServer.scala:160)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:128)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:271)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:201)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	... 3 more
+
+2025.10.20 09:37:04 INFO  no build target found for c:\Users\justi\OneDrive\Desktop\Semester 3\4. Software Engeneering\getting_started\introduction_to_scala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.20 09:37:04 INFO  Attempting to connect to the build server...
+2025.10.20 09:37:04 INFO  Running BSP server List(C:\Users\justi\AppData\Local\Coursier\data\bin\.scala-cli.aux.exe, bsp, --json-options, C:\Users\justi\OneDrive\Desktop\Semester 3\.scala-build\ide-options-v2.json, --json-launcher-options, C:\Users\justi\OneDrive\Desktop\Semester 3\.scala-build\ide-launcher-options.json, --envs-file, C:\Users\justi\OneDrive\Desktop\Semester 3\.scala-build\ide-envs.json, C:\Users\justi\OneDrive\Desktop\Semester 3)
+2025.10.20 09:37:04 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\justi\OneDrive\Desktop\Semester 3\.metals\bsp.trace.json or C:\Users\justi\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2025.10.20 09:37:06 INFO  BSP server: Starting compilation server
+Okt. 20, 2025 9:37:07 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SCHWERWIEGEND: Internal error: java.nio.file.NoSuchFileException: c:\Users\justi\OneDrive\Desktop\Semester 3\4. Software Engeneering\getting_started\introduction_to_scala.scala
+java.util.concurrent.CompletionException: java.nio.file.NoSuchFileException: c:\Users\justi\OneDrive\Desktop\Semester 3\4. Software Engeneering\getting_started\introduction_to_scala.scala
+	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323)
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:376)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:391)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:752)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:554)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2238)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:517)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+Caused by: java.nio.file.NoSuchFileException: c:\Users\justi\OneDrive\Desktop\Semester 3\4. Software Engeneering\getting_started\introduction_to_scala.scala
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:234)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:380)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:432)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3292)
+	at scala.meta.internal.io.PlatformFileIO$.slurp(PlatformFileIO.scala:42)
+	at scala.meta.internal.io.FileIO$.slurp(FileIO.scala:18)
+	at scala.meta.internal.mtags.ScalametaCommonEnrichments$XtensionAbsolutePath.toInput(ScalametaCommonEnrichments.scala:509)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionAbsolutePathBuffers.toInputFromBuffers(MetalsEnrichments.scala:641)
+	at scala.meta.internal.metals.SourceMapper.input$1(SourceMapper.scala:30)
+	at scala.meta.internal.metals.SourceMapper.$anonfun$pcMapping$2(SourceMapper.scala:35)
+	at scala.Option.getOrElse(Option.scala:201)
+	at scala.meta.internal.metals.SourceMapper.default$1(SourceMapper.scala:35)
+	at scala.meta.internal.metals.SourceMapper.$anonfun$pcMapping$5(SourceMapper.scala:52)
+	at scala.Option.getOrElse(Option.scala:201)
+	at scala.meta.internal.metals.SourceMapper.pcMapping(SourceMapper.scala:52)
+	at scala.meta.internal.metals.Compilers.sourceAdjustments(Compilers.scala:1571)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$2(Compilers.scala:474)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.Compilers.semanticTokens(Compilers.scala:470)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$semanticTokensFull$2(MetalsLspService.scala:1121)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:503)
+	... 3 more
+
+2025.10.20 09:37:12 INFO  time: Connected to build server in 7.47s
+2025.10.20 09:37:12 INFO  Connected to Build server: scala-cli v1.9.1
+2025.10.20 09:37:12 INFO  Empty build targets. Expected at least one build target identifier. (full report at: "C:\Users\justi\OneDrive\Desktop\Semester 3\.metals\.reports\bloop\2025-10-16\r_Empty build targets...._21-28-14-151.md")
+2025.10.20 09:37:12 INFO  Empty build targets. Expected at least one build target identifier. (full report at: "C:\Users\justi\OneDrive\Desktop\Semester 3\.metals\.reports\bloop\2025-10-16\r_Empty build targets...._21-28-14-151.md")
+2025.10.20 09:37:12 INFO  Empty build targets. Expected at least one build target identifier. (full report at: "C:\Users\justi\OneDrive\Desktop\Semester 3\.metals\.reports\bloop\2025-10-16\r_Empty build targets...._21-28-14-151.md")
+2025.10.20 09:37:12 INFO  Empty build targets. Expected at least one build target identifier. (full report at: "C:\Users\justi\OneDrive\Desktop\Semester 3\.metals\.reports\bloop\2025-10-16\r_Empty build targets...._21-28-14-151.md")
+2025.10.20 09:37:12 INFO  compiling semester 3_d5c0a6989e (6 scala sources)
+2025.10.20 09:37:15 WARN  Invalid text document uri received from build server: file:///C:/Users/justi/OneDrive/Desktop/Semester%203/4.%20Software%20Engeneering/getting_started/introduction_to_scala.scala
+2025.10.20 09:37:15 INFO  compiling semester 3_d5c0a6989e (6 scala sources)
+2025.10.20 09:37:17 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+2025.10.20 09:37:17 INFO  time: indexed workspace in 5.37s
+Okt. 20, 2025 9:37:18 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFORMATION: Unsupported notification method: $/setTrace
+Okt. 20, 2025 9:37:19 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFORMATION: Unsupported notification method: $/setTrace
+2025.10.20 09:37:41 WARN  no build target for: c:\Users\justi\OneDrive\Desktop\Semester 3\4. Software Engeneering\getting_started\introduction_to_scala.scala
+2025.10.20 09:37:41 INFO  no build target found for c:\Users\justi\OneDrive\Desktop\Semester 3\4. Software Engeneering\getting_started\introduction_to_scala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.20 09:37:41 INFO  no build target found for c:\Users\justi\OneDrive\Desktop\Semester 3\4. Software Engeneering\getting_started\introduction_to_scala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+Okt. 20, 2025 9:37:41 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SCHWERWIEGEND: Internal error: java.nio.file.NoSuchFileException: c:\Users\justi\OneDrive\Desktop\Semester 3\4. Software Engeneering\getting_started\introduction_to_scala.scala
+java.util.concurrent.CompletionException: java.nio.file.NoSuchFileException: c:\Users\justi\OneDrive\Desktop\Semester 3\4. Software Engeneering\getting_started\introduction_to_scala.scala
+	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323)
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:376)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:391)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:752)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:554)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2238)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:517)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+Caused by: java.nio.file.NoSuchFileException: c:\Users\justi\OneDrive\Desktop\Semester 3\4. Software Engeneering\getting_started\introduction_to_scala.scala
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:234)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:380)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:432)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3292)
+	at scala.meta.internal.io.PlatformFileIO$.slurp(PlatformFileIO.scala:42)
+	at scala.meta.internal.io.FileIO$.slurp(FileIO.scala:18)
+	at scala.meta.internal.mtags.ScalametaCommonEnrichments$XtensionAbsolutePath.toInput(ScalametaCommonEnrichments.scala:509)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionAbsolutePathBuffers.toInputFromBuffers(MetalsEnrichments.scala:641)
+	at scala.meta.internal.metals.SourceMapper.input$1(SourceMapper.scala:30)
+	at scala.meta.internal.metals.SourceMapper.$anonfun$pcMapping$2(SourceMapper.scala:35)
+	at scala.Option.getOrElse(Option.scala:201)
+	at scala.meta.internal.metals.SourceMapper.default$1(SourceMapper.scala:35)
+	at scala.meta.internal.metals.SourceMapper.$anonfun$pcMapping$5(SourceMapper.scala:52)
+	at scala.Option.getOrElse(Option.scala:201)
+	at scala.meta.internal.metals.SourceMapper.pcMapping(SourceMapper.scala:52)
+	at scala.meta.internal.metals.Compilers.sourceAdjustments(Compilers.scala:1571)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$2(Compilers.scala:474)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.Compilers.semanticTokens(Compilers.scala:470)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$semanticTokensFull$2(MetalsLspService.scala:1121)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:503)
+	... 3 more
+
+2025.10.20 09:37:41 WARN  no build target for: c:\Users\justi\OneDrive\Desktop\Semester 3\4. Software Engeneering\getting_started\introduction_to_scala.scala
+2025.10.20 09:37:41 INFO  no build target found for c:\Users\justi\OneDrive\Desktop\Semester 3\4. Software Engeneering\getting_started\introduction_to_scala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+Okt. 20, 2025 9:37:41 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SCHWERWIEGEND: Internal error: java.nio.file.NoSuchFileException: c:\Users\justi\OneDrive\Desktop\Semester 3\4. Software Engeneering\getting_started\introduction_to_scala.scala
+java.util.concurrent.CompletionException: java.nio.file.NoSuchFileException: c:\Users\justi\OneDrive\Desktop\Semester 3\4. Software Engeneering\getting_started\introduction_to_scala.scala
+	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323)
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:376)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:391)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:752)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:554)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2238)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:517)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+Caused by: java.nio.file.NoSuchFileException: c:\Users\justi\OneDrive\Desktop\Semester 3\4. Software Engeneering\getting_started\introduction_to_scala.scala
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:234)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:380)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:432)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3292)
+	at scala.meta.internal.io.PlatformFileIO$.slurp(PlatformFileIO.scala:42)
+	at scala.meta.internal.io.FileIO$.slurp(FileIO.scala:18)
+	at scala.meta.internal.mtags.ScalametaCommonEnrichments$XtensionAbsolutePath.toInput(ScalametaCommonEnrichments.scala:509)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionAbsolutePathBuffers.toInputFromBuffers(MetalsEnrichments.scala:641)
+	at scala.meta.internal.metals.SourceMapper.input$1(SourceMapper.scala:30)
+	at scala.meta.internal.metals.SourceMapper.$anonfun$pcMapping$2(SourceMapper.scala:35)
+	at scala.Option.getOrElse(Option.scala:201)
+	at scala.meta.internal.metals.SourceMapper.default$1(SourceMapper.scala:35)
+	at scala.meta.internal.metals.SourceMapper.$anonfun$pcMapping$5(SourceMapper.scala:52)
+	at scala.Option.getOrElse(Option.scala:201)
+	at scala.meta.internal.metals.SourceMapper.pcMapping(SourceMapper.scala:52)
+	at scala.meta.internal.metals.Compilers.sourceAdjustments(Compilers.scala:1571)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$2(Compilers.scala:474)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.Compilers.semanticTokens(Compilers.scala:470)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$semanticTokensFull$2(MetalsLspService.scala:1121)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:503)
+	... 3 more
+
+Okt. 20, 2025 9:37:42 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SCHWERWIEGEND: Internal error: java.util.NoSuchElementException: BatchedFunction
+java.util.concurrent.CompletionException: java.util.NoSuchElementException: BatchedFunction
+	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323)
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:376)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:391)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:752)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:554)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2238)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:517)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+Caused by: java.util.NoSuchElementException: BatchedFunction
+	at scala.meta.internal.metals.BatchedFunction.<init>(BatchedFunction.scala:96)
+	at scala.meta.internal.metals.MetalsLspService.<init>(MetalsLspService.scala:237)
+	at scala.meta.internal.metals.ProjectMetalsLspService.<init>(ProjectMetalsLspService.scala:81)
+	at scala.meta.internal.metals.WorkspaceLspService.createService(WorkspaceLspService.scala:258)
+	at scala.meta.internal.metals.WorkspaceLspService.$anonfun$workspaceFolders$1(WorkspaceLspService.scala:265)
+	at scala.collection.immutable.List.map(List.scala:236)
+	at scala.meta.internal.metals.WorkspaceFolders.initServices(WorkspaceFolders.scala:43)
+	at scala.meta.internal.metals.WorkspaceFolders.<init>(WorkspaceFolders.scala:22)
+	at scala.meta.internal.metals.WorkspaceLspService.<init>(WorkspaceLspService.scala:263)
+	at scala.meta.metals.MetalsLanguageServer.createService(MetalsLanguageServer.scala:219)
+	at scala.meta.metals.MetalsLanguageServer.initialize(MetalsLanguageServer.scala:160)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:128)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:271)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:201)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	... 3 more
+
+Okt. 20, 2025 9:37:42 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SCHWERWIEGEND: Internal error: java.util.NoSuchElementException: BatchedFunction
+java.util.concurrent.CompletionException: java.util.NoSuchElementException: BatchedFunction
+	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323)
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:376)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:391)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:752)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:554)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2238)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:517)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+Caused by: java.util.NoSuchElementException: BatchedFunction
+	at scala.meta.internal.metals.BatchedFunction.<init>(BatchedFunction.scala:96)
+	at scala.meta.internal.metals.MetalsLspService.<init>(MetalsLspService.scala:237)
+	at scala.meta.internal.metals.ProjectMetalsLspService.<init>(ProjectMetalsLspService.scala:81)
+	at scala.meta.internal.metals.WorkspaceLspService.createService(WorkspaceLspService.scala:258)
+	at scala.meta.internal.metals.WorkspaceLspService.$anonfun$workspaceFolders$1(WorkspaceLspService.scala:265)
+	at scala.collection.immutable.List.map(List.scala:236)
+	at scala.meta.internal.metals.WorkspaceFolders.initServices(WorkspaceFolders.scala:43)
+	at scala.meta.internal.metals.WorkspaceFolders.<init>(WorkspaceFolders.scala:22)
+	at scala.meta.internal.metals.WorkspaceLspService.<init>(WorkspaceLspService.scala:263)
+	at scala.meta.metals.MetalsLanguageServer.createService(MetalsLanguageServer.scala:219)
+	at scala.meta.metals.MetalsLanguageServer.initialize(MetalsLanguageServer.scala:160)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:128)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:271)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:201)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	... 3 more
+
+2025.10.20 09:37:43 INFO  no build target found for c:\Users\justi\OneDrive\Desktop\Semester 3\4. Software Engeneering\getting_started\introduction_to_scala.scala. Using presentation compiler with project's scala-library version: 3.3.6
+Okt. 20, 2025 9:59:46 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFORMATION: Unsupported notification method: $/setTrace
