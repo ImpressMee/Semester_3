@@ -2739,3 +2739,22 @@ Caused by: java.util.NoSuchElementException: BatchedFunction
 2025.10.20 09:37:43 INFO  no build target found for c:\Users\justi\OneDrive\Desktop\Semester 3\4. Software Engeneering\getting_started\introduction_to_scala.scala. Using presentation compiler with project's scala-library version: 3.3.6
 Okt. 20, 2025 9:59:46 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
 INFORMATION: Unsupported notification method: $/setTrace
+2025.10.20 14:05:42 INFO  Started: Metals version 1.6.3 in folders 'C:\Users\justi\OneDrive\Desktop\Semester 3' for client Visual Studio Code 1.105.1.
+2025.10.20 14:05:46 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+2025.10.20 14:05:46 INFO  Attempting to connect to the build server...
+2025.10.20 14:05:46 INFO  Running BSP server List(C:\Users\justi\AppData\Local\Coursier\data\bin\.scala-cli.aux.exe, bsp, --json-options, C:\Users\justi\OneDrive\Desktop\Semester 3\.scala-build\ide-options-v2.json, --json-launcher-options, C:\Users\justi\OneDrive\Desktop\Semester 3\.scala-build\ide-launcher-options.json, --envs-file, C:\Users\justi\OneDrive\Desktop\Semester 3\.scala-build\ide-envs.json, C:\Users\justi\OneDrive\Desktop\Semester 3)
+2025.10.20 14:05:47 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\justi\OneDrive\Desktop\Semester 3\.metals\bsp.trace.json or C:\Users\justi\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2025.10.20 14:05:49 INFO  BSP server: Starting compilation server
+2025.10.20 14:05:55 INFO  time: Connected to build server in 8.64s
+2025.10.20 14:05:55 INFO  Connected to Build server: scala-cli v1.9.1
+2025.10.20 14:05:55 INFO  Empty build targets. Expected at least one build target identifier. (full report at: "C:\Users\justi\OneDrive\Desktop\Semester 3\.metals\.reports\bloop\2025-10-16\r_Empty build targets...._21-28-14-151.md")
+2025.10.20 14:05:55 INFO  Empty build targets. Expected at least one build target identifier. (full report at: "C:\Users\justi\OneDrive\Desktop\Semester 3\.metals\.reports\bloop\2025-10-16\r_Empty build targets...._21-28-14-151.md")
+2025.10.20 14:05:55 INFO  Empty build targets. Expected at least one build target identifier. (full report at: "C:\Users\justi\OneDrive\Desktop\Semester 3\.metals\.reports\bloop\2025-10-16\r_Empty build targets...._21-28-14-151.md")
+2025.10.20 14:05:55 INFO  Empty build targets. Expected at least one build target identifier. (full report at: "C:\Users\justi\OneDrive\Desktop\Semester 3\.metals\.reports\bloop\2025-10-16\r_Empty build targets...._21-28-14-151.md")
+2025.10.20 14:05:55 INFO  compiling semester 3_d5c0a6989e (6 scala sources)
+2025.10.20 14:05:58 WARN  Invalid text document uri received from build server: file:///C:/Users/justi/OneDrive/Desktop/Semester%203/4.%20Software%20Engeneering/getting_started/introduction_to_scala.scala
+2025.10.20 14:05:58 INFO  compiling semester 3_d5c0a6989e (6 scala sources)
+2025.10.20 14:06:00 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+2025.10.20 14:06:00 INFO  time: indexed workspace in 4.82s
+Okt. 20, 2025 2:35:50 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFORMATION: Unsupported notification method: $/setTrace
