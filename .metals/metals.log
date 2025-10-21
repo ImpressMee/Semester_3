@@ -2758,3 +2758,84 @@ INFORMATION: Unsupported notification method: $/setTrace
 2025.10.20 14:06:00 INFO  time: indexed workspace in 4.82s
 Okt. 20, 2025 2:35:50 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
 INFORMATION: Unsupported notification method: $/setTrace
+2025.10.21 10:43:32 INFO  Started: Metals version 1.6.3 in folders 'C:\Users\justi\OneDrive\Desktop\Semester 3' for client Visual Studio Code 1.105.1.
+2025.10.21 10:43:37 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+2025.10.21 10:43:37 INFO  Attempting to connect to the build server...
+2025.10.21 10:43:37 INFO  Running BSP server List(C:\Users\justi\AppData\Local\Coursier\data\bin\.scala-cli.aux.exe, bsp, --json-options, C:\Users\justi\OneDrive\Desktop\Semester 3\.scala-build\ide-options-v2.json, --json-launcher-options, C:\Users\justi\OneDrive\Desktop\Semester 3\.scala-build\ide-launcher-options.json, --envs-file, C:\Users\justi\OneDrive\Desktop\Semester 3\.scala-build\ide-envs.json, C:\Users\justi\OneDrive\Desktop\Semester 3)
+2025.10.21 10:43:37 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\justi\OneDrive\Desktop\Semester 3\.metals\bsp.trace.json or C:\Users\justi\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2025.10.21 10:43:38 INFO  BSP server: Starting compilation server
+2025.10.21 10:43:41 INFO  time: Connected to build server in 3.69s
+2025.10.21 10:43:41 INFO  Connected to Build server: scala-cli v1.9.1
+2025.10.21 10:43:41 INFO  Empty build targets. Expected at least one build target identifier. (full report at: "C:\Users\justi\OneDrive\Desktop\Semester 3\.metals\.reports\bloop\2025-10-16\r_Empty build targets...._21-28-14-151.md")
+2025.10.21 10:43:41 INFO  Empty build targets. Expected at least one build target identifier. (full report at: "C:\Users\justi\OneDrive\Desktop\Semester 3\.metals\.reports\bloop\2025-10-16\r_Empty build targets...._21-28-14-151.md")
+2025.10.21 10:43:41 INFO  Empty build targets. Expected at least one build target identifier. (full report at: "C:\Users\justi\OneDrive\Desktop\Semester 3\.metals\.reports\bloop\2025-10-16\r_Empty build targets...._21-28-14-151.md")
+2025.10.21 10:43:41 INFO  Empty build targets. Expected at least one build target identifier. (full report at: "C:\Users\justi\OneDrive\Desktop\Semester 3\.metals\.reports\bloop\2025-10-16\r_Empty build targets...._21-28-14-151.md")
+2025.10.21 10:43:41 INFO  compiling semester 3_d5c0a6989e (6 scala sources)
+2025.10.21 10:43:43 WARN  Invalid text document uri received from build server: file:///C:/Users/justi/OneDrive/Desktop/Semester%203/4.%20Software%20Engeneering/getting_started/introduction_to_scala.scala
+2025.10.21 10:43:43 INFO  compiling semester 3_d5c0a6989e (6 scala sources)
+2025.10.21 10:43:46 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+2025.10.21 10:43:46 INFO  time: indexed workspace in 5.22s
+Okt. 21, 2025 11:12:40 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFORMATION: Unsupported notification method: $/setTrace
+2025.10.21 11:14:26 INFO  BSP server: Bloop 'bsp' command exited with code 1. Something may be wrong with the current configuration.
+2025.10.21 11:14:26 INFO  BSP server: Running the clean sub-command to clear the working directory and remove caches might help.
+2025.10.21 11:14:26 INFO  BSP server: If the error persists, please report the issue as a bug and attach a log with increased verbosity by passing -v -v -v.
+2025.10.21 11:14:26 INFO  BSP server: Oct 21, 2025 11:14:26 AM org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireStreamClosed
+2025.10.21 11:14:26 INFO  BSP server: INFO: Connection reset
+2025.10.21 11:14:26 INFO  BSP server: java.net.SocketException: Connection reset
+2025.10.21 11:14:26 INFO  BSP server: 	at java.base@17.0.6/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+2025.10.21 11:14:26 INFO  BSP server: 	at java.base@17.0.6/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+2025.10.21 11:14:26 INFO  BSP server: 	at libdaemonjvm.Util$$anon$1$$anon$2.read(Util.scala:19)
+2025.10.21 11:14:26 INFO  BSP server: 	at java.base@17.0.6/sun.nio.ch.ChannelInputStream.read(ChannelInputStream.java:65)
+2025.10.21 11:14:26 INFO  BSP server: 	at java.base@17.0.6/sun.nio.ch.ChannelInputStream.read(ChannelInputStream.java:107)
+2025.10.21 11:14:26 INFO  BSP server: 	at java.base@17.0.6/sun.nio.ch.ChannelInputStream.read(ChannelInputStream.java:101)
+2025.10.21 11:14:26 INFO  BSP server: 	at java.base@17.0.6/java.io.InputStream.read(InputStream.java:218)
+2025.10.21 11:14:26 INFO  BSP server: 	at java.base@17.0.6/sun.nio.ch.ChannelInputStream.read(ChannelInputStream.java:81)
+2025.10.21 11:14:26 INFO  BSP server: 	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:79)
+2025.10.21 11:14:26 INFO  BSP server: 	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+2025.10.21 11:14:26 INFO  BSP server: 	at java.base@17.0.6/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+2025.10.21 11:14:26 INFO  BSP server: 	at java.base@17.0.6/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+2025.10.21 11:14:26 INFO  BSP server: 	at java.base@17.0.6/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+2025.10.21 11:14:26 INFO  BSP server: 	at java.base@17.0.6/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+2025.10.21 11:14:26 INFO  BSP server: 	at java.base@17.0.6/java.lang.Thread.run(Thread.java:833)
+2025.10.21 11:14:26 INFO  BSP server: 	at com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:775)
+2025.10.21 11:14:26 INFO  BSP server: 	at com.oracle.svm.core.windows.WindowsPlatformThreads.osThreadStartRoutine(WindowsPlatformThreads.java:178)
+2025.10.21 11:14:26 INFO  BSP server: 
+2025.10.21 19:43:02 INFO  Started: Metals version 1.6.3 in folders 'C:\Users\justi\OneDrive\Desktop\Semester 3' for client Visual Studio Code 1.105.1.
+2025.10.21 19:43:06 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+2025.10.21 19:43:06 INFO  Attempting to connect to the build server...
+2025.10.21 19:43:06 INFO  Running BSP server List(C:\Users\justi\AppData\Local\Coursier\data\bin\.scala-cli.aux.exe, bsp, --json-options, C:\Users\justi\OneDrive\Desktop\Semester 3\.scala-build\ide-options-v2.json, --json-launcher-options, C:\Users\justi\OneDrive\Desktop\Semester 3\.scala-build\ide-launcher-options.json, --envs-file, C:\Users\justi\OneDrive\Desktop\Semester 3\.scala-build\ide-envs.json, C:\Users\justi\OneDrive\Desktop\Semester 3)
+2025.10.21 19:43:06 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\justi\OneDrive\Desktop\Semester 3\.metals\bsp.trace.json or C:\Users\justi\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2025.10.21 19:43:08 INFO  BSP server: Starting compilation server
+2025.10.21 19:43:15 INFO  time: Connected to build server in 9.01s
+2025.10.21 19:43:15 INFO  Connected to Build server: scala-cli v1.9.1
+2025.10.21 19:43:15 INFO  Empty build targets. Expected at least one build target identifier. (full report at: "C:\Users\justi\OneDrive\Desktop\Semester 3\.metals\.reports\bloop\2025-10-16\r_Empty build targets...._21-28-14-151.md")
+2025.10.21 19:43:15 INFO  Empty build targets. Expected at least one build target identifier. (full report at: "C:\Users\justi\OneDrive\Desktop\Semester 3\.metals\.reports\bloop\2025-10-16\r_Empty build targets...._21-28-14-151.md")
+2025.10.21 19:43:15 INFO  Empty build targets. Expected at least one build target identifier. (full report at: "C:\Users\justi\OneDrive\Desktop\Semester 3\.metals\.reports\bloop\2025-10-16\r_Empty build targets...._21-28-14-151.md")
+2025.10.21 19:43:15 INFO  Empty build targets. Expected at least one build target identifier. (full report at: "C:\Users\justi\OneDrive\Desktop\Semester 3\.metals\.reports\bloop\2025-10-16\r_Empty build targets...._21-28-14-151.md")
+2025.10.21 19:43:15 INFO  compiling semester 3_d5c0a6989e (6 scala sources)
+2025.10.21 19:43:18 WARN  Invalid text document uri received from build server: file:///C:/Users/justi/OneDrive/Desktop/Semester%203/4.%20Software%20Engeneering/getting_started/introduction_to_scala.scala
+2025.10.21 19:43:18 INFO  compiling semester 3_d5c0a6989e (6 scala sources)
+2025.10.21 19:43:20 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+2025.10.21 19:43:20 INFO  time: indexed workspace in 5.02s
+2025.10.21 19:54:12 INFO  Shutting down server
+2025.10.21 19:54:12 INFO  shutting down Metals
+2025.10.21 19:54:12 INFO  Shut down connection with build server.
+2025.10.21 19:54:12 INFO  Exiting server
+2025.10.22 00:51:16 INFO  Started: Metals version 1.6.3 in folders 'C:\Users\justi\OneDrive\Desktop\Semester 3' for client Visual Studio Code 1.105.1.
+2025.10.22 00:51:17 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+2025.10.22 00:51:18 INFO  Attempting to connect to the build server...
+2025.10.22 00:51:18 INFO  Running BSP server List(C:\Users\justi\AppData\Local\Coursier\data\bin\.scala-cli.aux.exe, bsp, --json-options, C:\Users\justi\OneDrive\Desktop\Semester 3\.scala-build\ide-options-v2.json, --json-launcher-options, C:\Users\justi\OneDrive\Desktop\Semester 3\.scala-build\ide-launcher-options.json, --envs-file, C:\Users\justi\OneDrive\Desktop\Semester 3\.scala-build\ide-envs.json, C:\Users\justi\OneDrive\Desktop\Semester 3)
+2025.10.22 00:51:18 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\justi\OneDrive\Desktop\Semester 3\.metals\bsp.trace.json or C:\Users\justi\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2025.10.22 00:51:20 INFO  time: Connected to build server in 2.25s
+2025.10.22 00:51:20 INFO  Connected to Build server: scala-cli v1.9.1
+2025.10.22 00:51:20 INFO  Empty build targets. Expected at least one build target identifier. (full report at: "C:\Users\justi\OneDrive\Desktop\Semester 3\.metals\.reports\bloop\2025-10-16\r_Empty build targets...._21-28-14-151.md")
+2025.10.22 00:51:20 INFO  Empty build targets. Expected at least one build target identifier. (full report at: "C:\Users\justi\OneDrive\Desktop\Semester 3\.metals\.reports\bloop\2025-10-16\r_Empty build targets...._21-28-14-151.md")
+2025.10.22 00:51:20 INFO  Empty build targets. Expected at least one build target identifier. (full report at: "C:\Users\justi\OneDrive\Desktop\Semester 3\.metals\.reports\bloop\2025-10-16\r_Empty build targets...._21-28-14-151.md")
+2025.10.22 00:51:20 INFO  Empty build targets. Expected at least one build target identifier. (full report at: "C:\Users\justi\OneDrive\Desktop\Semester 3\.metals\.reports\bloop\2025-10-16\r_Empty build targets...._21-28-14-151.md")
+2025.10.22 00:51:20 INFO  compiling semester 3_d5c0a6989e (6 scala sources)
+2025.10.22 00:51:20 INFO  compiling semester 3_d5c0a6989e (6 scala sources)
+2025.10.22 00:51:22 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+2025.10.22 00:51:22 INFO  time: indexed workspace in 2.36s
+Okt. 22, 2025 1:37:07 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFORMATION: Unsupported notification method: $/setTrace
