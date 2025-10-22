@@ -1,9 +1,9 @@
-package Wizard.src.main.scala.de.htwg.wizard
+package `4$u002E$u0020Software$u0020Engineering`.Wizard.src.main.scala.de.htwg.wizard
 
 
 final class example$_ {
 def args = example_sc.args$
-def scriptPath = """Wizard/src/main/scala/de/htwg/wizard/example.sc"""
+def scriptPath = """4. Software Engineering/Wizard/src/main/scala/de/htwg/wizard/example.sc"""
 /*<script>*/
 case class Cell(value:Int) {
   def isSet:Boolean = value != 0

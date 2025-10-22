@@ -2863,3 +2863,32 @@ WARNUNG: Unkown message type.
 2025.10.22 12:20:18 INFO  time: indexed workspace in 5.07s
 Okt. 22, 2025 6:04:49 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
 INFORMATION: Unsupported notification method: $/setTrace
+2025.10.22 18:14:36 INFO  Empty build targets. Expected at least one build target identifier. (full report at: "C:\Users\justi\OneDrive\Desktop\Semester 3\.metals\.reports\bloop\2025-10-16\r_Empty build targets...._21-28-14-151.md")
+2025.10.22 18:14:36 INFO  Empty build targets. Expected at least one build target identifier. (full report at: "C:\Users\justi\OneDrive\Desktop\Semester 3\.metals\.reports\bloop\2025-10-16\r_Empty build targets...._21-28-14-151.md")
+2025.10.22 18:14:36 INFO  compiling semester 3_d5c0a6989e (10 scala sources)
+2025.10.22 18:14:36 INFO  Empty build targets. Expected at least one build target identifier. (full report at: "C:\Users\justi\OneDrive\Desktop\Semester 3\.metals\.reports\bloop\2025-10-16\r_Empty build targets...._21-28-14-151.md")
+2025.10.22 18:14:36 INFO  Empty build targets. Expected at least one build target identifier. (full report at: "C:\Users\justi\OneDrive\Desktop\Semester 3\.metals\.reports\bloop\2025-10-16\r_Empty build targets...._21-28-14-151.md")
+2025.10.22 18:14:37 INFO  time: Imported build in 0.96s
+2025.10.22 18:14:36 INFO  compiling semester 3_d5c0a6989e (10 scala sources)
+2025.10.22 18:14:38 INFO  compiling semester 3_d5c0a6989e (10 scala sources)
+2025.10.22 18:14:38 INFO  compiling semester 3_d5c0a6989e (10 scala sources)
+2025.10.22 18:14:38 INFO  time: indexed workspace in 1.41s
+2025.10.22 18:14:56 INFO  Shutting down server
+2025.10.22 18:14:56 INFO  shutting down Metals
+2025.10.22 18:14:56 INFO  Shut down connection with build server.
+2025.10.22 18:14:56 INFO  Exiting server
+2025.10.22 18:16:17 INFO  Started: Metals version 1.6.3 in folders 'C:\Users\justi\OneDrive\Desktop\Semester 3' for client Visual Studio Code 1.105.1.
+2025.10.22 18:16:18 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+2025.10.22 18:16:18 INFO  Attempting to connect to the build server...
+2025.10.22 18:16:18 INFO  Running BSP server List(C:\Users\justi\AppData\Local\Coursier\data\bin\.scala-cli.aux.exe, bsp, --json-options, C:\Users\justi\OneDrive\Desktop\Semester 3\.scala-build\ide-options-v2.json, --json-launcher-options, C:\Users\justi\OneDrive\Desktop\Semester 3\.scala-build\ide-launcher-options.json, --envs-file, C:\Users\justi\OneDrive\Desktop\Semester 3\.scala-build\ide-envs.json, C:\Users\justi\OneDrive\Desktop\Semester 3)
+2025.10.22 18:16:18 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\justi\OneDrive\Desktop\Semester 3\.metals\bsp.trace.json or C:\Users\justi\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2025.10.22 18:16:20 INFO  time: Connected to build server in 1.57s
+2025.10.22 18:16:20 INFO  Connected to Build server: scala-cli v1.9.1
+2025.10.22 18:16:20 INFO  Empty build targets. Expected at least one build target identifier. (full report at: "C:\Users\justi\OneDrive\Desktop\Semester 3\.metals\.reports\bloop\2025-10-16\r_Empty build targets...._21-28-14-151.md")
+2025.10.22 18:16:20 INFO  Empty build targets. Expected at least one build target identifier. (full report at: "C:\Users\justi\OneDrive\Desktop\Semester 3\.metals\.reports\bloop\2025-10-16\r_Empty build targets...._21-28-14-151.md")
+2025.10.22 18:16:20 INFO  Empty build targets. Expected at least one build target identifier. (full report at: "C:\Users\justi\OneDrive\Desktop\Semester 3\.metals\.reports\bloop\2025-10-16\r_Empty build targets...._21-28-14-151.md")
+2025.10.22 18:16:20 INFO  Empty build targets. Expected at least one build target identifier. (full report at: "C:\Users\justi\OneDrive\Desktop\Semester 3\.metals\.reports\bloop\2025-10-16\r_Empty build targets...._21-28-14-151.md")
+2025.10.22 18:16:20 INFO  compiling semester 3_d5c0a6989e (10 scala sources)
+2025.10.22 18:16:20 INFO  compiling semester 3_d5c0a6989e (10 scala sources)
+2025.10.22 18:16:22 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+2025.10.22 18:16:22 INFO  time: indexed workspace in 2.05s
