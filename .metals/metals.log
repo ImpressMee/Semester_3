@@ -2892,3 +2892,43 @@ INFORMATION: Unsupported notification method: $/setTrace
 2025.10.22 18:16:20 INFO  compiling semester 3_d5c0a6989e (10 scala sources)
 2025.10.22 18:16:22 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
 2025.10.22 18:16:22 INFO  time: indexed workspace in 2.05s
+2025.10.23 09:21:13 INFO  Started: Metals version 1.6.3 in folders 'C:\Users\justi\OneDrive\Desktop\Semester 3' for client Visual Studio Code 1.105.1.
+2025.10.23 09:21:21 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+2025.10.23 09:21:22 INFO  Attempting to connect to the build server...
+2025.10.23 09:21:22 INFO  Running BSP server List(C:\Users\justi\AppData\Local\Coursier\data\bin\.scala-cli.aux.exe, bsp, --json-options, C:\Users\justi\OneDrive\Desktop\Semester 3\.scala-build\ide-options-v2.json, --json-launcher-options, C:\Users\justi\OneDrive\Desktop\Semester 3\.scala-build\ide-launcher-options.json, --envs-file, C:\Users\justi\OneDrive\Desktop\Semester 3\.scala-build\ide-envs.json, C:\Users\justi\OneDrive\Desktop\Semester 3)
+2025.10.23 09:21:22 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\justi\OneDrive\Desktop\Semester 3\.metals\bsp.trace.json or C:\Users\justi\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2025.10.23 09:21:27 INFO  BSP server: Starting compilation server
+2025.10.23 09:21:39 INFO  time: Connected to build server in 17s
+2025.10.23 09:21:39 INFO  Connected to Build server: scala-cli v1.9.1
+2025.10.23 09:21:39 INFO  Empty build targets. Expected at least one build target identifier. (full report at: "C:\Users\justi\OneDrive\Desktop\Semester 3\.metals\.reports\bloop\2025-10-16\r_Empty build targets...._21-28-14-151.md")
+2025.10.23 09:21:39 INFO  Empty build targets. Expected at least one build target identifier. (full report at: "C:\Users\justi\OneDrive\Desktop\Semester 3\.metals\.reports\bloop\2025-10-16\r_Empty build targets...._21-28-14-151.md")
+2025.10.23 09:21:39 INFO  Empty build targets. Expected at least one build target identifier. (full report at: "C:\Users\justi\OneDrive\Desktop\Semester 3\.metals\.reports\bloop\2025-10-16\r_Empty build targets...._21-28-14-151.md")
+2025.10.23 09:21:39 INFO  Empty build targets. Expected at least one build target identifier. (full report at: "C:\Users\justi\OneDrive\Desktop\Semester 3\.metals\.reports\bloop\2025-10-16\r_Empty build targets...._21-28-14-151.md")
+2025.10.23 09:21:39 INFO  time: Imported build in 0.15s
+2025.10.23 09:21:40 INFO  compiling semester 3_d5c0a6989e (10 scala sources)
+2025.10.23 09:21:45 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+2025.10.23 09:21:45 INFO  time: indexed workspace in 6.52s
+2025.10.23 09:21:46 WARN  Invalid text document uri received from build server: file:///C:/Users/justi/OneDrive/Desktop/Semester%203/4.%20Software%20Engeneering/getting_started/introduction_to_scala.scala
+2025.10.23 09:21:46 INFO  compiling semester 3_d5c0a6989e (10 scala sources)
+2025.10.23 09:39:18 INFO  Started: Metals version 1.6.3 in folders 'C:\Users\justi\OneDrive\Desktop\Semester 3' for client Visual Studio Code 1.105.1.
+2025.10.23 09:39:22 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+2025.10.23 09:39:22 INFO  Attempting to connect to the build server...
+2025.10.23 09:39:22 INFO  Running BSP server List(C:\Users\justi\AppData\Local\Coursier\data\bin\.scala-cli.aux.exe, bsp, --json-options, C:\Users\justi\OneDrive\Desktop\Semester 3\.scala-build\ide-options-v2.json, --json-launcher-options, C:\Users\justi\OneDrive\Desktop\Semester 3\.scala-build\ide-launcher-options.json, --envs-file, C:\Users\justi\OneDrive\Desktop\Semester 3\.scala-build\ide-envs.json, C:\Users\justi\OneDrive\Desktop\Semester 3)
+2025.10.23 09:39:23 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\justi\OneDrive\Desktop\Semester 3\.metals\bsp.trace.json or C:\Users\justi\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2025.10.23 09:39:23 INFO  BSP server: Starting compilation server
+2025.10.23 09:39:26 INFO  time: Connected to build server in 3.99s
+2025.10.23 09:39:26 INFO  Connected to Build server: scala-cli v1.9.1
+2025.10.23 09:39:26 INFO  Empty build targets. Expected at least one build target identifier. (full report at: "C:\Users\justi\OneDrive\Desktop\Semester 3\.metals\.reports\bloop\2025-10-16\r_Empty build targets...._21-28-14-151.md")
+2025.10.23 09:39:26 INFO  Empty build targets. Expected at least one build target identifier. (full report at: "C:\Users\justi\OneDrive\Desktop\Semester 3\.metals\.reports\bloop\2025-10-16\r_Empty build targets...._21-28-14-151.md")
+2025.10.23 09:39:26 INFO  Empty build targets. Expected at least one build target identifier. (full report at: "C:\Users\justi\OneDrive\Desktop\Semester 3\.metals\.reports\bloop\2025-10-16\r_Empty build targets...._21-28-14-151.md")
+2025.10.23 09:39:26 INFO  Empty build targets. Expected at least one build target identifier. (full report at: "C:\Users\justi\OneDrive\Desktop\Semester 3\.metals\.reports\bloop\2025-10-16\r_Empty build targets...._21-28-14-151.md")
+2025.10.23 09:39:26 INFO  time: Imported build in 0.14s
+2025.10.23 09:39:26 INFO  compiling semester 3_d5c0a6989e (10 scala sources)
+2025.10.23 09:39:29 WARN  Invalid text document uri received from build server: file:///C:/Users/justi/OneDrive/Desktop/Semester%203/4.%20Software%20Engeneering/getting_started/introduction_to_scala.scala
+2025.10.23 09:39:29 INFO  compiling semester 3_d5c0a6989e (10 scala sources)
+2025.10.23 09:39:31 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+2025.10.23 09:39:31 INFO  time: indexed workspace in 5.21s
+2025.10.23 10:11:27 INFO  Shutting down server
+2025.10.23 10:11:27 INFO  shutting down Metals
+2025.10.23 10:11:27 INFO  Shut down connection with build server.
+2025.10.23 10:11:27 INFO  Exiting server
