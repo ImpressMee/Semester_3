@@ -51,7 +51,7 @@ public class Dynamic_Array {
     public boolean insert(int key) {
 
         // zuerst testen ob key existiert
-        if (search(key) >= 0) return false;
+        if (search(key) >= 0) return false; // Key existiert
 
         if (anzElem == a.length)
             enlarge();
@@ -82,7 +82,7 @@ public class Dynamic_Array {
         return true;
     }
 
-    // korrekte binäre Suche
+    // binäre Suche
     public int search(int key) {
         int links = 0;
         int rechts = anzElem - 1;
@@ -99,9 +99,10 @@ public class Dynamic_Array {
             }
         }
 
-        return -1;
+        return -1; // nicht vorhanden
     }
 
+    // Interpolant schätzt anhand vom gegeben Key an welcher Position es muss
     public int searchInterpolant(int key) {
         int links = 0;
         int rechts = anzElem - 1;
@@ -128,7 +129,6 @@ public class Dynamic_Array {
         return -1;
     }
 
-
     // Entfernen
     public boolean remove(int key) {
         int pos = search(key);
@@ -141,9 +141,6 @@ public class Dynamic_Array {
         }
 
         anzElem--;
-        // alte letzte Position ist irrelevant, aber wir setzen sie NICHT auf 0,
-        // da das sortierte Array sonst fehlerhaft aussehen würde
-        // a[anzElem] = 0; // entfernt
 
         if (anzElem == a.length / 2)
             shrink();
@@ -152,6 +149,7 @@ public class Dynamic_Array {
     }
 
     public void ausgabe() {
+        // Gibt die einträge des Arrays aus. Die Leerstellen werden dabei abgeschnitten
         System.out.println(Arrays.toString(Arrays.copyOf(a, anzElem)));
     }
 }

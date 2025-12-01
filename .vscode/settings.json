@@ -1,5 +1,9 @@
 {
     "files.watcherExclude": {
         "**/target": true
-    }
+    },
+    "java.project.sourcePaths": [
+        "1. Algorithmen und Datenstrukturen/algorithmen",
+        "2. Betriebssysteme"
+    ]
 }
