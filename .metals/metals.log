@@ -2997,3 +2997,45 @@ INFORMATION: Unsupported notification method: $/setTrace
 2025.10.23 19:29:32 INFO  shutting down Metals
 2025.10.23 19:29:32 INFO  Shut down connection with build server.
 2025.10.23 19:29:32 INFO  Exiting server
+2025.12.08 08:22:21 INFO  Started: Metals version 1.6.4 in folders 'C:\Users\Nikita\Desktop\Semester3\Semester_3' for client Visual Studio Code 1.106.2.
+2025.12.08 08:22:22 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+2025.12.08 08:22:22 INFO  Attempting to connect to the build server...
+2025.12.08 08:22:22 INFO  Running BSP server List(C:\Users\justi\AppData\Local\Coursier\data\bin\.scala-cli.aux.exe, bsp, --json-options, C:\Users\justi\OneDrive\Desktop\Semester 3\.scala-build\ide-options-v2.json, --json-launcher-options, C:\Users\justi\OneDrive\Desktop\Semester 3\.scala-build\ide-launcher-options.json, --envs-file, C:\Users\justi\OneDrive\Desktop\Semester 3\.scala-build\ide-envs.json, C:\Users\justi\OneDrive\Desktop\Semester 3)
+2025.12.08 08:22:22 ERROR Running process 'C:\Users\justi\AppData\Local\Coursier\data\bin\.scala-cli.aux.exe bsp --json-options C:\Users\justi\OneDrive\Desktop\Semester 3\.scala-build\ide-options-v2.json --json-launcher-options C:\Users\justi\OneDrive\Desktop\Semester 3\.scala-build\ide-launcher-options.json --envs-file C:\Users\justi\OneDrive\Desktop\Semester 3\.scala-build\ide-envs.json C:\Users\justi\OneDrive\Desktop\Semester 3' failed
+java.io.IOException: Cannot run program "C:\Users\justi\AppData\Local\Coursier\data\bin\.scala-cli.aux.exe" (in directory "C:\Users\Nikita\Desktop\Semester3\Semester_3"): CreateProcess error=2, Das System kann die angegebene Datei nicht finden
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1112)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1046)
+	at scala.meta.internal.process.SystemProcess$.run(SystemProcess.scala:48)
+	at scala.meta.internal.bsp.BspServers.newConnection$1(BspServers.scala:118)
+	at scala.meta.internal.bsp.BspServers.$anonfun$newServer$8(BspServers.scala:161)
+	at scala.meta.internal.metals.BuildServerConnection$.setupServer$1(BuildServerConnection.scala:631)
+	at scala.meta.internal.metals.BuildServerConnection$.fromSockets(BuildServerConnection.scala:700)
+	at scala.meta.internal.bsp.BspServers.newServer(BspServers.scala:156)
+	at scala.meta.internal.bsp.BspConnector.connect$1(BspConnector.scala:185)
+	at scala.meta.internal.bsp.BspConnector.connect(BspConnector.scala:260)
+	at scala.meta.internal.metals.ConnectionProvider$Connect$.$anonfun$createSession$7(ConnectionProvider.scala:586)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:503)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.lang.Thread.run(Thread.java:1474)
+Caused by: java.io.IOException: CreateProcess error=2, Das System kann die angegebene Datei nicht finden
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:485)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:146)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1078)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1046)
+	at scala.meta.internal.process.SystemProcess$.run(SystemProcess.scala:48)
+	at scala.meta.internal.bsp.BspServers.newConnection$1(BspServers.scala:118)
+	at scala.meta.internal.bsp.BspServers.$anonfun$newServer$8(BspServers.scala:161)
+	at scala.meta.internal.metals.BuildServerConnection$.setupServer$1(BuildServerConnection.scala:631)
+	at scala.meta.internal.metals.BuildServerConnection$.fromSockets(BuildServerConnection.scala:700)
+	at scala.meta.internal.bsp.BspServers.newServer(BspServers.scala:156)
+	at scala.meta.internal.bsp.BspConnector.connect$1(BspConnector.scala:185)
+	at scala.meta.internal.bsp.BspConnector.connect(BspConnector.scala:260)
+	at scala.meta.internal.metals.ConnectionProvider$Connect$.$anonfun$createSession$7(ConnectionProvider.scala:586)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:503)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.lang.Thread.run(Thread.java:1474)
+
+2025.12.08 08:22:22 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Nikita\Desktop\Semester3\Semester_3\.metals\bsp.trace.json or C:\Users\Nikita\AppData\Local\scalameta\metals\cache\bsp.trace.json
