@@ -20,14 +20,14 @@ import java.util.Random;
 public class MergeSort {
 
     private static int zuweisungen = 0;
-    private static int vergleiche = 0;
+    public static int vergleiche = 0;
 
     private static void reset(){
         zuweisungen = 0;
         vergleiche = 0;
     }
 
-    private static void mergeSort(int[] nums) {
+    public static void mergeSort(int[] nums) {
         
         int size = nums.length;
         

@@ -23,7 +23,7 @@ import java.util.Random;
 
 public class SelectionSearch {
     static int zuweisungen = 0;
-    static int vergleiche = 0;
+    public static int vergleiche = 0;
 
     public static void selectionSearch(int[] unsortedArray){
         vergleiche = 0;

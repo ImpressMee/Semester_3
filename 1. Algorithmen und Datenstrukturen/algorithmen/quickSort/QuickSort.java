@@ -15,7 +15,7 @@ import java.util.Random;
 public class QuickSort {
 
     private static int zuweisungen = 0; // zählt Array-Schreiboperationen
-    private static int vergleiche = 0;
+    public static int vergleiche = 0;
 
     private static void reset(){
         zuweisungen = 0;
@@ -23,7 +23,7 @@ public class QuickSort {
     }
 
     // Sortiert den Bereich nums[start ... end]
-    private static void quicksort(int[] nums, int start, int end){
+    public static void quicksort(int[] nums, int start, int end){
         
         if(end <= start) return; // Wenn Bereich 0 oder 1 Element → fertig
 

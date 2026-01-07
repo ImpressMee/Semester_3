@@ -4959,3 +4959,660 @@ Caused by: java.io.IOException: CreateProcess error=2, Das System kann die angeg
 2025.12.18 13:03:41 INFO  Shutting down server
 2025.12.18 13:03:41 INFO  shutting down Metals
 2025.12.18 13:03:41 INFO  Exiting server
+2026.01.07 18:46:23 INFO  Started: Metals version 1.6.4 in folders 'C:\Users\Nikita\Desktop\Semester3\Semester_3' for client Visual Studio Code 1.107.1.
+2026.01.07 18:46:24 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+2026.01.07 18:46:24 INFO  Attempting to connect to the build server...
+2026.01.07 18:46:24 INFO  Running BSP server List(C:\Users\justi\AppData\Local\Coursier\data\bin\.scala-cli.aux.exe, bsp, --json-options, C:\Users\justi\OneDrive\Desktop\Semester 3\.scala-build\ide-options-v2.json, --json-launcher-options, C:\Users\justi\OneDrive\Desktop\Semester 3\.scala-build\ide-launcher-options.json, --envs-file, C:\Users\justi\OneDrive\Desktop\Semester 3\.scala-build\ide-envs.json, C:\Users\justi\OneDrive\Desktop\Semester 3)
+2026.01.07 18:46:24 ERROR Running process 'C:\Users\justi\AppData\Local\Coursier\data\bin\.scala-cli.aux.exe bsp --json-options C:\Users\justi\OneDrive\Desktop\Semester 3\.scala-build\ide-options-v2.json --json-launcher-options C:\Users\justi\OneDrive\Desktop\Semester 3\.scala-build\ide-launcher-options.json --envs-file C:\Users\justi\OneDrive\Desktop\Semester 3\.scala-build\ide-envs.json C:\Users\justi\OneDrive\Desktop\Semester 3' failed
+java.io.IOException: Cannot run program "C:\Users\justi\AppData\Local\Coursier\data\bin\.scala-cli.aux.exe" (in directory "C:\Users\Nikita\Desktop\Semester3\Semester_3"): CreateProcess error=2, Das System kann die angegebene Datei nicht finden
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1112)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1046)
+	at scala.meta.internal.process.SystemProcess$.run(SystemProcess.scala:48)
+	at scala.meta.internal.bsp.BspServers.newConnection$1(BspServers.scala:118)
+	at scala.meta.internal.bsp.BspServers.$anonfun$newServer$8(BspServers.scala:161)
+	at scala.meta.internal.metals.BuildServerConnection$.setupServer$1(BuildServerConnection.scala:631)
+	at scala.meta.internal.metals.BuildServerConnection$.fromSockets(BuildServerConnection.scala:700)
+	at scala.meta.internal.bsp.BspServers.newServer(BspServers.scala:156)
+	at scala.meta.internal.bsp.BspConnector.connect$1(BspConnector.scala:185)
+	at scala.meta.internal.bsp.BspConnector.connect(BspConnector.scala:260)
+	at scala.meta.internal.metals.ConnectionProvider$Connect$.$anonfun$createSession$7(ConnectionProvider.scala:586)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:503)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.lang.Thread.run(Thread.java:1474)
+Caused by: java.io.IOException: CreateProcess error=2, Das System kann die angegebene Datei nicht finden
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:485)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:146)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1078)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1046)
+	at scala.meta.internal.process.SystemProcess$.run(SystemProcess.scala:48)
+	at scala.meta.internal.bsp.BspServers.newConnection$1(BspServers.scala:118)
+	at scala.meta.internal.bsp.BspServers.$anonfun$newServer$8(BspServers.scala:161)
+	at scala.meta.internal.metals.BuildServerConnection$.setupServer$1(BuildServerConnection.scala:631)
+	at scala.meta.internal.metals.BuildServerConnection$.fromSockets(BuildServerConnection.scala:700)
+	at scala.meta.internal.bsp.BspServers.newServer(BspServers.scala:156)
+	at scala.meta.internal.bsp.BspConnector.connect$1(BspConnector.scala:185)
+	at scala.meta.internal.bsp.BspConnector.connect(BspConnector.scala:260)
+	at scala.meta.internal.metals.ConnectionProvider$Connect$.$anonfun$createSession$7(ConnectionProvider.scala:586)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:503)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.lang.Thread.run(Thread.java:1474)
+
+2026.01.07 18:46:24 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Nikita\Desktop\Semester3\Semester_3\.metals\bsp.trace.json or C:\Users\Nikita\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2026.01.07 18:47:24 ERROR Timeout waiting for 'build/initialize' response
+2026.01.07 18:47:24 WARN  Retrying connection to the build server scala-cli
+2026.01.07 18:47:24 INFO  Running BSP server List(C:\Users\justi\AppData\Local\Coursier\data\bin\.scala-cli.aux.exe, bsp, --json-options, C:\Users\justi\OneDrive\Desktop\Semester 3\.scala-build\ide-options-v2.json, --json-launcher-options, C:\Users\justi\OneDrive\Desktop\Semester 3\.scala-build\ide-launcher-options.json, --envs-file, C:\Users\justi\OneDrive\Desktop\Semester 3\.scala-build\ide-envs.json, C:\Users\justi\OneDrive\Desktop\Semester 3)
+2026.01.07 18:47:24 ERROR Running process 'C:\Users\justi\AppData\Local\Coursier\data\bin\.scala-cli.aux.exe bsp --json-options C:\Users\justi\OneDrive\Desktop\Semester 3\.scala-build\ide-options-v2.json --json-launcher-options C:\Users\justi\OneDrive\Desktop\Semester 3\.scala-build\ide-launcher-options.json --envs-file C:\Users\justi\OneDrive\Desktop\Semester 3\.scala-build\ide-envs.json C:\Users\justi\OneDrive\Desktop\Semester 3' failed
+java.io.IOException: Cannot run program "C:\Users\justi\AppData\Local\Coursier\data\bin\.scala-cli.aux.exe" (in directory "C:\Users\Nikita\Desktop\Semester3\Semester_3"): CreateProcess error=2, Das System kann die angegebene Datei nicht finden
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1112)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1046)
+	at scala.meta.internal.process.SystemProcess$.run(SystemProcess.scala:48)
+	at scala.meta.internal.bsp.BspServers.newConnection$1(BspServers.scala:118)
+	at scala.meta.internal.bsp.BspServers.$anonfun$newServer$8(BspServers.scala:161)
+	at scala.meta.internal.metals.BuildServerConnection$.setupServer$1(BuildServerConnection.scala:631)
+	at scala.meta.internal.metals.BuildServerConnection$.fromSockets(BuildServerConnection.scala:700)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$17.applyOrElse(BuildServerConnection.scala:717)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$17.applyOrElse(BuildServerConnection.scala:714)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.lang.Thread.run(Thread.java:1474)
+Caused by: java.io.IOException: CreateProcess error=2, Das System kann die angegebene Datei nicht finden
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:485)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:146)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1078)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1046)
+	at scala.meta.internal.process.SystemProcess$.run(SystemProcess.scala:48)
+	at scala.meta.internal.bsp.BspServers.newConnection$1(BspServers.scala:118)
+	at scala.meta.internal.bsp.BspServers.$anonfun$newServer$8(BspServers.scala:161)
+	at scala.meta.internal.metals.BuildServerConnection$.setupServer$1(BuildServerConnection.scala:631)
+	at scala.meta.internal.metals.BuildServerConnection$.fromSockets(BuildServerConnection.scala:700)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$17.applyOrElse(BuildServerConnection.scala:717)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$17.applyOrElse(BuildServerConnection.scala:714)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.lang.Thread.run(Thread.java:1474)
+
+2026.01.07 18:47:24 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Nikita\Desktop\Semester3\Semester_3\.metals\bsp.trace.json or C:\Users\Nikita\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2026.01.07 18:48:24 ERROR Timeout waiting for 'build/initialize' response
+2026.01.07 18:48:24 WARN  Retrying connection to the build server scala-cli
+2026.01.07 18:48:24 INFO  Running BSP server List(C:\Users\justi\AppData\Local\Coursier\data\bin\.scala-cli.aux.exe, bsp, --json-options, C:\Users\justi\OneDrive\Desktop\Semester 3\.scala-build\ide-options-v2.json, --json-launcher-options, C:\Users\justi\OneDrive\Desktop\Semester 3\.scala-build\ide-launcher-options.json, --envs-file, C:\Users\justi\OneDrive\Desktop\Semester 3\.scala-build\ide-envs.json, C:\Users\justi\OneDrive\Desktop\Semester 3)
+2026.01.07 18:48:24 ERROR Running process 'C:\Users\justi\AppData\Local\Coursier\data\bin\.scala-cli.aux.exe bsp --json-options C:\Users\justi\OneDrive\Desktop\Semester 3\.scala-build\ide-options-v2.json --json-launcher-options C:\Users\justi\OneDrive\Desktop\Semester 3\.scala-build\ide-launcher-options.json --envs-file C:\Users\justi\OneDrive\Desktop\Semester 3\.scala-build\ide-envs.json C:\Users\justi\OneDrive\Desktop\Semester 3' failed
+java.io.IOException: Cannot run program "C:\Users\justi\AppData\Local\Coursier\data\bin\.scala-cli.aux.exe" (in directory "C:\Users\Nikita\Desktop\Semester3\Semester_3"): CreateProcess error=2, Das System kann die angegebene Datei nicht finden
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1112)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1046)
+	at scala.meta.internal.process.SystemProcess$.run(SystemProcess.scala:48)
+	at scala.meta.internal.bsp.BspServers.newConnection$1(BspServers.scala:118)
+	at scala.meta.internal.bsp.BspServers.$anonfun$newServer$8(BspServers.scala:161)
+	at scala.meta.internal.metals.BuildServerConnection$.setupServer$1(BuildServerConnection.scala:631)
+	at scala.meta.internal.metals.BuildServerConnection$.fromSockets(BuildServerConnection.scala:700)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$17.applyOrElse(BuildServerConnection.scala:717)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$17.applyOrElse(BuildServerConnection.scala:714)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.lang.Thread.run(Thread.java:1474)
+Caused by: java.io.IOException: CreateProcess error=2, Das System kann die angegebene Datei nicht finden
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:485)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:146)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1078)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1046)
+	at scala.meta.internal.process.SystemProcess$.run(SystemProcess.scala:48)
+	at scala.meta.internal.bsp.BspServers.newConnection$1(BspServers.scala:118)
+	at scala.meta.internal.bsp.BspServers.$anonfun$newServer$8(BspServers.scala:161)
+	at scala.meta.internal.metals.BuildServerConnection$.setupServer$1(BuildServerConnection.scala:631)
+	at scala.meta.internal.metals.BuildServerConnection$.fromSockets(BuildServerConnection.scala:700)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$17.applyOrElse(BuildServerConnection.scala:717)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$17.applyOrElse(BuildServerConnection.scala:714)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.lang.Thread.run(Thread.java:1474)
+
+2026.01.07 18:48:24 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Nikita\Desktop\Semester3\Semester_3\.metals\bsp.trace.json or C:\Users\Nikita\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2026.01.07 18:49:01 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:04 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:07 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:07 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:07 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:07 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:08 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:08 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:08 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:09 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:08 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:10 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:10 WARN  no build target for: C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java
+2026.01.07 18:49:10 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:10 INFO  Created report: Optional[file:///C:/Users/Nikita/Desktop/Semester3/Semester_3/1.%20Algorithmen%20und%20Datenstrukturen/algorithmen/heapsort/main.java]
+2026.01.07 18:49:10 INFO  QDox parse error in file:///C:/Users/Nikita/Desktop/Semester3/Semester_3/1.%20Algorithmen%20und%20Datenstrukturen/algorithmen/heapsort/main.java (full report at: "C:\Users\Nikita\Desktop\Semester3\Semester_3\.metals\.reports\metals-full\2026-01-07\r_qdox-error_18-49-10-562.md")
+2026.01.07 18:49:10 WARN  Running javac-semanticdb failed for file:///C:/Users/Nikita/Desktop/Semester3/Semester_3/1.%20Algorithmen%20und%20Datenstrukturen/algorithmen/heapsort/main.java. Output:
+
+2026.01.07 18:49:10 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:11 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:10 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:12 WARN  no build target for: C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java
+2026.01.07 18:49:12 INFO  QDox parse error in file:///C:/Users/Nikita/Desktop/Semester3/Semester_3/1.%20Algorithmen%20und%20Datenstrukturen/algorithmen/heapsort/main.java (full report at: "C:\Users\Nikita\Desktop\Semester3\Semester_3\.metals\.reports\metals-full\2026-01-07\r_qdox-error_18-49-10-562.md")
+2026.01.07 18:49:12 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:12 WARN  Running javac-semanticdb failed for file:///C:/Users/Nikita/Desktop/Semester3/Semester_3/1.%20Algorithmen%20und%20Datenstrukturen/algorithmen/heapsort/main.java. Output:
+
+2026.01.07 18:49:12 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:13 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:13 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:13 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:13 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:13 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:13 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:13 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:13 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:14 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:14 WARN  no build target for: C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java
+2026.01.07 18:49:14 INFO  QDox parse error in file:///C:/Users/Nikita/Desktop/Semester3/Semester_3/1.%20Algorithmen%20und%20Datenstrukturen/algorithmen/heapsort/main.java (full report at: "C:\Users\Nikita\Desktop\Semester3\Semester_3\.metals\.reports\metals-full\2026-01-07\r_qdox-error_18-49-10-562.md")
+2026.01.07 18:49:14 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:14 WARN  Running javac-semanticdb failed for file:///C:/Users/Nikita/Desktop/Semester3/Semester_3/1.%20Algorithmen%20und%20Datenstrukturen/algorithmen/heapsort/main.java. Output:
+
+2026.01.07 18:49:14 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:15 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:15 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:15 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:15 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:16 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:15 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:16 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:17 INFO  QDox parse error in file:///C:/Users/Nikita/Desktop/Semester3/Semester_3/1.%20Algorithmen%20und%20Datenstrukturen/algorithmen/heapsort/main.java (full report at: "C:\Users\Nikita\Desktop\Semester3\Semester_3\.metals\.reports\metals-full\2026-01-07\r_qdox-error_18-49-10-562.md")
+2026.01.07 18:49:17 WARN  no build target for: C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java
+2026.01.07 18:49:17 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:16 WARN  Running javac-semanticdb failed for file:///C:/Users/Nikita/Desktop/Semester3/Semester_3/1.%20Algorithmen%20und%20Datenstrukturen/algorithmen/heapsort/main.java. Output:
+
+2026.01.07 18:49:19 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:19 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:19 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:19 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:19 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:19 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:19 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:19 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:19 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:19 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:20 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:20 WARN  no build target for: C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java
+2026.01.07 18:49:20 INFO  QDox parse error in file:///C:/Users/Nikita/Desktop/Semester3/Semester_3/1.%20Algorithmen%20und%20Datenstrukturen/algorithmen/heapsort/main.java (full report at: "C:\Users\Nikita\Desktop\Semester3\Semester_3\.metals\.reports\metals-full\2026-01-07\r_qdox-error_18-49-10-562.md")
+2026.01.07 18:49:20 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:20 WARN  Running javac-semanticdb failed for file:///C:/Users/Nikita/Desktop/Semester3/Semester_3/1.%20Algorithmen%20und%20Datenstrukturen/algorithmen/heapsort/main.java. Output:
+
+2026.01.07 18:49:20 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:21 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:21 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:21 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:21 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+Jan. 07, 2026 6:49:21 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNUNG: Unmatched cancel notification for request id 83
+Jan. 07, 2026 6:49:21 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNUNG: Unmatched cancel notification for request id 84
+Jan. 07, 2026 6:49:21 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNUNG: Unmatched cancel notification for request id 85
+2026.01.07 18:49:21 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:21 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:22 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:22 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:22 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:22 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:24 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:24 ERROR Timeout waiting for 'build/initialize' response
+2026.01.07 18:49:24 WARN  Retrying connection to the build server scala-cli
+2026.01.07 18:49:24 INFO  Running BSP server List(C:\Users\justi\AppData\Local\Coursier\data\bin\.scala-cli.aux.exe, bsp, --json-options, C:\Users\justi\OneDrive\Desktop\Semester 3\.scala-build\ide-options-v2.json, --json-launcher-options, C:\Users\justi\OneDrive\Desktop\Semester 3\.scala-build\ide-launcher-options.json, --envs-file, C:\Users\justi\OneDrive\Desktop\Semester 3\.scala-build\ide-envs.json, C:\Users\justi\OneDrive\Desktop\Semester 3)
+2026.01.07 18:49:24 ERROR Running process 'C:\Users\justi\AppData\Local\Coursier\data\bin\.scala-cli.aux.exe bsp --json-options C:\Users\justi\OneDrive\Desktop\Semester 3\.scala-build\ide-options-v2.json --json-launcher-options C:\Users\justi\OneDrive\Desktop\Semester 3\.scala-build\ide-launcher-options.json --envs-file C:\Users\justi\OneDrive\Desktop\Semester 3\.scala-build\ide-envs.json C:\Users\justi\OneDrive\Desktop\Semester 3' failed
+java.io.IOException: Cannot run program "C:\Users\justi\AppData\Local\Coursier\data\bin\.scala-cli.aux.exe" (in directory "C:\Users\Nikita\Desktop\Semester3\Semester_3"): CreateProcess error=2, Das System kann die angegebene Datei nicht finden
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1112)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1046)
+	at scala.meta.internal.process.SystemProcess$.run(SystemProcess.scala:48)
+	at scala.meta.internal.bsp.BspServers.newConnection$1(BspServers.scala:118)
+	at scala.meta.internal.bsp.BspServers.$anonfun$newServer$8(BspServers.scala:161)
+	at scala.meta.internal.metals.BuildServerConnection$.setupServer$1(BuildServerConnection.scala:631)
+	at scala.meta.internal.metals.BuildServerConnection$.fromSockets(BuildServerConnection.scala:700)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$17.applyOrElse(BuildServerConnection.scala:717)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$17.applyOrElse(BuildServerConnection.scala:714)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.lang.Thread.run(Thread.java:1474)
+Caused by: java.io.IOException: CreateProcess error=2, Das System kann die angegebene Datei nicht finden
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:485)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:146)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1078)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1046)
+	at scala.meta.internal.process.SystemProcess$.run(SystemProcess.scala:48)
+	at scala.meta.internal.bsp.BspServers.newConnection$1(BspServers.scala:118)
+	at scala.meta.internal.bsp.BspServers.$anonfun$newServer$8(BspServers.scala:161)
+	at scala.meta.internal.metals.BuildServerConnection$.setupServer$1(BuildServerConnection.scala:631)
+	at scala.meta.internal.metals.BuildServerConnection$.fromSockets(BuildServerConnection.scala:700)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$17.applyOrElse(BuildServerConnection.scala:717)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$17.applyOrElse(BuildServerConnection.scala:714)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.lang.Thread.run(Thread.java:1474)
+
+2026.01.07 18:49:24 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Nikita\Desktop\Semester3\Semester_3\.metals\bsp.trace.json or C:\Users\Nikita\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2026.01.07 18:49:24 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:24 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:24 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:24 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:25 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:25 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:25 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:26 WARN  no build target for: C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java
+2026.01.07 18:49:26 INFO  QDox parse error in file:///C:/Users/Nikita/Desktop/Semester3/Semester_3/1.%20Algorithmen%20und%20Datenstrukturen/algorithmen/heapsort/main.java (full report at: "C:\Users\Nikita\Desktop\Semester3\Semester_3\.metals\.reports\metals-full\2026-01-07\r_qdox-error_18-49-10-562.md")
+2026.01.07 18:49:26 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:26 WARN  Running javac-semanticdb failed for file:///C:/Users/Nikita/Desktop/Semester3/Semester_3/1.%20Algorithmen%20und%20Datenstrukturen/algorithmen/heapsort/main.java. Output:
+
+2026.01.07 18:49:27 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:27 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:27 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:27 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:27 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:27 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:28 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:28 WARN  no build target for: C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java
+2026.01.07 18:49:28 INFO  QDox parse error in file:///C:/Users/Nikita/Desktop/Semester3/Semester_3/1.%20Algorithmen%20und%20Datenstrukturen/algorithmen/heapsort/main.java (full report at: "C:\Users\Nikita\Desktop\Semester3\Semester_3\.metals\.reports\metals-full\2026-01-07\r_qdox-error_18-49-10-562.md")
+2026.01.07 18:49:28 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:27 WARN  Running javac-semanticdb failed for file:///C:/Users/Nikita/Desktop/Semester3/Semester_3/1.%20Algorithmen%20und%20Datenstrukturen/algorithmen/heapsort/main.java. Output:
+
+2026.01.07 18:49:30 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:30 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:30 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:31 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:30 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:30 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:31 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:31 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:31 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:31 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:31 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:31 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:31 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:31 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:32 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:32 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:32 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:32 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:32 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:33 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:33 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:33 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:34 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:33 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:33 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:33 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:34 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:34 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:34 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:34 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:34 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:34 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:34 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:34 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:34 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:35 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:34 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:34 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:35 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:36 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:35 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:35 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:35 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:35 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:35 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:35 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:36 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:35 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:35 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:37 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:36 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:37 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:37 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:38 WARN  no build target for: C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java
+2026.01.07 18:49:38 INFO  QDox parse error in file:///C:/Users/Nikita/Desktop/Semester3/Semester_3/1.%20Algorithmen%20und%20Datenstrukturen/algorithmen/heapsort/main.java (full report at: "C:\Users\Nikita\Desktop\Semester3\Semester_3\.metals\.reports\metals-full\2026-01-07\r_qdox-error_18-49-10-562.md")
+2026.01.07 18:49:38 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:37 WARN  Running javac-semanticdb failed for file:///C:/Users/Nikita/Desktop/Semester3/Semester_3/1.%20Algorithmen%20und%20Datenstrukturen/algorithmen/heapsort/main.java. Output:
+
+2026.01.07 18:49:39 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\quickSort\QuickSort.java. Using fallback presentation compiler.
+2026.01.07 18:49:43 WARN  no build target for: C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java
+2026.01.07 18:49:43 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:44 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:44 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:44 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:44 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:44 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:44 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:44 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:44 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:44 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:44 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:44 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:45 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:46 WARN  no build target for: C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java
+2026.01.07 18:49:46 INFO  QDox parse error in file:///C:/Users/Nikita/Desktop/Semester3/Semester_3/1.%20Algorithmen%20und%20Datenstrukturen/algorithmen/heapsort/main.java (full report at: "C:\Users\Nikita\Desktop\Semester3\Semester_3\.metals\.reports\metals-full\2026-01-07\r_qdox-error_18-49-10-562.md")
+2026.01.07 18:49:46 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:46 WARN  Running javac-semanticdb failed for file:///C:/Users/Nikita/Desktop/Semester3/Semester_3/1.%20Algorithmen%20und%20Datenstrukturen/algorithmen/heapsort/main.java. Output:
+
+2026.01.07 18:49:46 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:46 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\main.java. Using fallback presentation compiler.
+2026.01.07 18:49:56 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:49:56 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:49:57 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:49:57 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:49:57 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:49:57 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:49:57 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:49:57 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:49:57 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:49:58 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:49:58 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:49:58 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:49:58 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:49:59 WARN  no build target for: C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java
+2026.01.07 18:49:59 INFO  Created report: Optional[file:///C:/Users/Nikita/Desktop/Semester3/Semester_3/1.%20Algorithmen%20und%20Datenstrukturen/algorithmen/heapsort/Main.java]
+2026.01.07 18:49:59 INFO  QDox parse error in file:///C:/Users/Nikita/Desktop/Semester3/Semester_3/1.%20Algorithmen%20und%20Datenstrukturen/algorithmen/heapsort/Main.java (full report at: "C:\Users\Nikita\Desktop\Semester3\Semester_3\.metals\.reports\metals-full\2026-01-07\r_qdox-error_18-49-59-755.md")
+2026.01.07 18:49:59 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:49:59 WARN  Running javac-semanticdb failed for file:///C:/Users/Nikita/Desktop/Semester3/Semester_3/1.%20Algorithmen%20und%20Datenstrukturen/algorithmen/heapsort/Main.java. Output:
+
+2026.01.07 18:50:02 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:02 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:02 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:02 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:02 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:02 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:02 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:02 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:03 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:02 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:03 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:03 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:03 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:03 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:03 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:04 WARN  no build target for: C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java
+2026.01.07 18:50:04 INFO  QDox parse error in file:///C:/Users/Nikita/Desktop/Semester3/Semester_3/1.%20Algorithmen%20und%20Datenstrukturen/algorithmen/heapsort/Main.java (full report at: "C:\Users\Nikita\Desktop\Semester3\Semester_3\.metals\.reports\metals-full\2026-01-07\r_qdox-error_18-49-59-755.md")
+2026.01.07 18:50:04 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:04 WARN  Running javac-semanticdb failed for file:///C:/Users/Nikita/Desktop/Semester3/Semester_3/1.%20Algorithmen%20und%20Datenstrukturen/algorithmen/heapsort/Main.java. Output:
+
+2026.01.07 18:50:04 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:04 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:04 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:05 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:06 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:06 WARN  no build target for: C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java
+2026.01.07 18:50:06 INFO  QDox parse error in file:///C:/Users/Nikita/Desktop/Semester3/Semester_3/1.%20Algorithmen%20und%20Datenstrukturen/algorithmen/heapsort/Main.java (full report at: "C:\Users\Nikita\Desktop\Semester3\Semester_3\.metals\.reports\metals-full\2026-01-07\r_qdox-error_18-49-59-755.md")
+2026.01.07 18:50:06 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:06 WARN  Running javac-semanticdb failed for file:///C:/Users/Nikita/Desktop/Semester3/Semester_3/1.%20Algorithmen%20und%20Datenstrukturen/algorithmen/heapsort/Main.java. Output:
+
+2026.01.07 18:50:06 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:06 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:06 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:06 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:06 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:07 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:07 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:07 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:07 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:07 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:08 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:07 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:07 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:08 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:07 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:08 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:09 WARN  no build target for: C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java
+2026.01.07 18:50:09 INFO  QDox parse error in file:///C:/Users/Nikita/Desktop/Semester3/Semester_3/1.%20Algorithmen%20und%20Datenstrukturen/algorithmen/heapsort/Main.java (full report at: "C:\Users\Nikita\Desktop\Semester3\Semester_3\.metals\.reports\metals-full\2026-01-07\r_qdox-error_18-49-59-755.md")
+2026.01.07 18:50:09 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:09 WARN  Running javac-semanticdb failed for file:///C:/Users/Nikita/Desktop/Semester3/Semester_3/1.%20Algorithmen%20und%20Datenstrukturen/algorithmen/heapsort/Main.java. Output:
+
+2026.01.07 18:50:11 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\quickSort\QuickSort.java. Using fallback presentation compiler.
+2026.01.07 18:50:11 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\selectionSearch\SelectionSearch.java. Using fallback presentation compiler.
+2026.01.07 18:50:11 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\selectionSearch\SelectionSearch.java. Using fallback presentation compiler.
+2026.01.07 18:50:11 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\selectionSearch\SelectionSearch.java. Using fallback presentation compiler.
+2026.01.07 18:50:12 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\selectionSearch\SelectionSearch.java. Using fallback presentation compiler.
+2026.01.07 18:50:13 WARN  no build target for: C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java
+2026.01.07 18:50:13 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:13 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:15 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:15 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:15 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:15 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:15 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:15 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:15 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:16 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:16 WARN  no build target for: C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java
+2026.01.07 18:50:16 INFO  QDox parse error in file:///C:/Users/Nikita/Desktop/Semester3/Semester_3/1.%20Algorithmen%20und%20Datenstrukturen/algorithmen/heapsort/Main.java (full report at: "C:\Users\Nikita\Desktop\Semester3\Semester_3\.metals\.reports\metals-full\2026-01-07\r_qdox-error_18-49-59-755.md")
+2026.01.07 18:50:16 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:16 WARN  Running javac-semanticdb failed for file:///C:/Users/Nikita/Desktop/Semester3/Semester_3/1.%20Algorithmen%20und%20Datenstrukturen/algorithmen/heapsort/Main.java. Output:
+
+2026.01.07 18:50:16 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:16 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:17 WARN  no build target for: C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java
+2026.01.07 18:50:17 INFO  QDox parse error in file:///C:/Users/Nikita/Desktop/Semester3/Semester_3/1.%20Algorithmen%20und%20Datenstrukturen/algorithmen/heapsort/Main.java (full report at: "C:\Users\Nikita\Desktop\Semester3\Semester_3\.metals\.reports\metals-full\2026-01-07\r_qdox-error_18-49-59-755.md")
+2026.01.07 18:50:17 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:17 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:21 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:21 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:21 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:21 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:21 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:24 ERROR Timeout waiting for 'build/initialize' response
+2026.01.07 18:50:24 WARN  Retrying connection to the build server scala-cli
+2026.01.07 18:50:24 INFO  Running BSP server List(C:\Users\justi\AppData\Local\Coursier\data\bin\.scala-cli.aux.exe, bsp, --json-options, C:\Users\justi\OneDrive\Desktop\Semester 3\.scala-build\ide-options-v2.json, --json-launcher-options, C:\Users\justi\OneDrive\Desktop\Semester 3\.scala-build\ide-launcher-options.json, --envs-file, C:\Users\justi\OneDrive\Desktop\Semester 3\.scala-build\ide-envs.json, C:\Users\justi\OneDrive\Desktop\Semester 3)
+2026.01.07 18:50:24 ERROR Running process 'C:\Users\justi\AppData\Local\Coursier\data\bin\.scala-cli.aux.exe bsp --json-options C:\Users\justi\OneDrive\Desktop\Semester 3\.scala-build\ide-options-v2.json --json-launcher-options C:\Users\justi\OneDrive\Desktop\Semester 3\.scala-build\ide-launcher-options.json --envs-file C:\Users\justi\OneDrive\Desktop\Semester 3\.scala-build\ide-envs.json C:\Users\justi\OneDrive\Desktop\Semester 3' failed
+java.io.IOException: Cannot run program "C:\Users\justi\AppData\Local\Coursier\data\bin\.scala-cli.aux.exe" (in directory "C:\Users\Nikita\Desktop\Semester3\Semester_3"): CreateProcess error=2, Das System kann die angegebene Datei nicht finden
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1112)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1046)
+	at scala.meta.internal.process.SystemProcess$.run(SystemProcess.scala:48)
+	at scala.meta.internal.bsp.BspServers.newConnection$1(BspServers.scala:118)
+	at scala.meta.internal.bsp.BspServers.$anonfun$newServer$8(BspServers.scala:161)
+	at scala.meta.internal.metals.BuildServerConnection$.setupServer$1(BuildServerConnection.scala:631)
+	at scala.meta.internal.metals.BuildServerConnection$.fromSockets(BuildServerConnection.scala:700)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$17.applyOrElse(BuildServerConnection.scala:717)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$17.applyOrElse(BuildServerConnection.scala:714)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.lang.Thread.run(Thread.java:1474)
+Caused by: java.io.IOException: CreateProcess error=2, Das System kann die angegebene Datei nicht finden
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:485)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:146)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1078)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1046)
+	at scala.meta.internal.process.SystemProcess$.run(SystemProcess.scala:48)
+	at scala.meta.internal.bsp.BspServers.newConnection$1(BspServers.scala:118)
+	at scala.meta.internal.bsp.BspServers.$anonfun$newServer$8(BspServers.scala:161)
+	at scala.meta.internal.metals.BuildServerConnection$.setupServer$1(BuildServerConnection.scala:631)
+	at scala.meta.internal.metals.BuildServerConnection$.fromSockets(BuildServerConnection.scala:700)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$17.applyOrElse(BuildServerConnection.scala:717)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$17.applyOrElse(BuildServerConnection.scala:714)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.lang.Thread.run(Thread.java:1474)
+
+2026.01.07 18:50:24 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Nikita\Desktop\Semester3\Semester_3\.metals\bsp.trace.json or C:\Users\Nikita\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2026.01.07 18:50:27 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:27 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:28 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:28 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:29 WARN  no build target for: C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java
+2026.01.07 18:50:29 INFO  QDox parse error in file:///C:/Users/Nikita/Desktop/Semester3/Semester_3/1.%20Algorithmen%20und%20Datenstrukturen/algorithmen/heapsort/Main.java (full report at: "C:\Users\Nikita\Desktop\Semester3\Semester_3\.metals\.reports\metals-full\2026-01-07\r_qdox-error_18-49-59-755.md")
+2026.01.07 18:50:28 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:29 WARN  Running javac-semanticdb failed for file:///C:/Users/Nikita/Desktop/Semester3/Semester_3/1.%20Algorithmen%20und%20Datenstrukturen/algorithmen/heapsort/Main.java. Output:
+
+2026.01.07 18:50:36 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:36 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:36 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:37 WARN  no build target for: C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java
+2026.01.07 18:50:37 INFO  QDox parse error in file:///C:/Users/Nikita/Desktop/Semester3/Semester_3/1.%20Algorithmen%20und%20Datenstrukturen/algorithmen/heapsort/Main.java (full report at: "C:\Users\Nikita\Desktop\Semester3\Semester_3\.metals\.reports\metals-full\2026-01-07\r_qdox-error_18-49-59-755.md")
+2026.01.07 18:50:37 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:37 WARN  Running javac-semanticdb failed for file:///C:/Users/Nikita/Desktop/Semester3/Semester_3/1.%20Algorithmen%20und%20Datenstrukturen/algorithmen/heapsort/Main.java. Output:
+
+2026.01.07 18:50:40 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:40 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:40 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:40 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:40 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:40 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:40 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:40 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:40 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:41 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:41 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:42 WARN  no build target for: C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java
+2026.01.07 18:50:42 INFO  QDox parse error in file:///C:/Users/Nikita/Desktop/Semester3/Semester_3/1.%20Algorithmen%20und%20Datenstrukturen/algorithmen/heapsort/Main.java (full report at: "C:\Users\Nikita\Desktop\Semester3\Semester_3\.metals\.reports\metals-full\2026-01-07\r_qdox-error_18-49-59-755.md")
+2026.01.07 18:50:42 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:42 WARN  Running javac-semanticdb failed for file:///C:/Users/Nikita/Desktop/Semester3/Semester_3/1.%20Algorithmen%20und%20Datenstrukturen/algorithmen/heapsort/Main.java. Output:
+
+2026.01.07 18:50:43 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:43 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:43 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:43 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:43 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:43 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:43 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:43 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:44 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:43 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:44 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:44 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:44 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:44 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:44 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:45 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:45 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:45 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:46 WARN  no build target for: C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java
+2026.01.07 18:50:46 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:46 WARN  Running javac-semanticdb failed for file:///C:/Users/Nikita/Desktop/Semester3/Semester_3/1.%20Algorithmen%20und%20Datenstrukturen/algorithmen/heapsort/Main.java. Output:
+
+2026.01.07 18:50:47 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:47 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:47 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:52 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:53 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:53 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:53 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:54 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:55 WARN  no build target for: C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java
+2026.01.07 18:50:55 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:55 WARN  Running javac-semanticdb failed for file:///C:/Users/Nikita/Desktop/Semester3/Semester_3/1.%20Algorithmen%20und%20Datenstrukturen/algorithmen/heapsort/Main.java. Output:
+
+2026.01.07 18:50:55 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:55 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:55 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:55 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:55 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:55 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:55 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:55 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:55 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:56 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:55 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:56 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:57 WARN  no build target for: C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java
+2026.01.07 18:50:56 INFO  QDox parse error in file:///C:/Users/Nikita/Desktop/Semester3/Semester_3/1.%20Algorithmen%20und%20Datenstrukturen/algorithmen/heapsort/Main.java (full report at: "C:\Users\Nikita\Desktop\Semester3\Semester_3\.metals\.reports\metals-full\2026-01-07\r_qdox-error_18-49-59-755.md")
+2026.01.07 18:50:57 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:57 WARN  Running javac-semanticdb failed for file:///C:/Users/Nikita/Desktop/Semester3/Semester_3/1.%20Algorithmen%20und%20Datenstrukturen/algorithmen/heapsort/Main.java. Output:
+
+2026.01.07 18:50:57 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:57 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:57 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:57 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:57 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:57 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:57 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:57 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:57 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:57 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:57 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:58 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:57 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:57 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:57 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:57 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:57 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:57 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:58 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:58 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:58 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:59 WARN  no build target for: C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java
+2026.01.07 18:50:59 INFO  QDox parse error in file:///C:/Users/Nikita/Desktop/Semester3/Semester_3/1.%20Algorithmen%20und%20Datenstrukturen/algorithmen/heapsort/Main.java (full report at: "C:\Users\Nikita\Desktop\Semester3\Semester_3\.metals\.reports\metals-full\2026-01-07\r_qdox-error_18-49-59-755.md")
+2026.01.07 18:50:59 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:50:59 WARN  Running javac-semanticdb failed for file:///C:/Users/Nikita/Desktop/Semester3/Semester_3/1.%20Algorithmen%20und%20Datenstrukturen/algorithmen/heapsort/Main.java. Output:
+
+2026.01.07 18:51:00 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:51:00 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+Jan. 07, 2026 6:51:01 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNUNG: Unmatched cancel notification for request id 522
+2026.01.07 18:51:01 WARN  no build target for: C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\selectionSearch\SelectionSearch.java
+2026.01.07 18:51:00 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\selectionSearch\SelectionSearch.java. Using fallback presentation compiler.
+2026.01.07 18:51:01 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\selectionSearch\SelectionSearch.java. Using fallback presentation compiler.
+2026.01.07 18:51:01 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\selectionSearch\SelectionSearch.java. Using fallback presentation compiler.
+2026.01.07 18:51:01 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\selectionSearch\SelectionSearch.java. Using fallback presentation compiler.
+2026.01.07 18:51:03 WARN  no build target for: C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java
+2026.01.07 18:51:03 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:51:03 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:51:03 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:51:05 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:51:05 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:51:05 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:51:05 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:51:06 WARN  no build target for: C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java
+2026.01.07 18:51:06 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:51:06 WARN  Running javac-semanticdb failed for file:///C:/Users/Nikita/Desktop/Semester3/Semester_3/1.%20Algorithmen%20und%20Datenstrukturen/algorithmen/heapsort/Main.java. Output:
+
+2026.01.07 18:51:08 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:51:08 INFO  no build target found for C:\Users\Nikita\Desktop\Semester3\Semester_3\1. Algorithmen und Datenstrukturen\algorithmen\heapsort\Main.java. Using fallback presentation compiler.
+2026.01.07 18:51:24 ERROR Timeout waiting for 'build/initialize' response
+2026.01.07 18:51:24 WARN  Retrying connection to the build server scala-cli
+2026.01.07 18:51:24 INFO  Running BSP server List(C:\Users\justi\AppData\Local\Coursier\data\bin\.scala-cli.aux.exe, bsp, --json-options, C:\Users\justi\OneDrive\Desktop\Semester 3\.scala-build\ide-options-v2.json, --json-launcher-options, C:\Users\justi\OneDrive\Desktop\Semester 3\.scala-build\ide-launcher-options.json, --envs-file, C:\Users\justi\OneDrive\Desktop\Semester 3\.scala-build\ide-envs.json, C:\Users\justi\OneDrive\Desktop\Semester 3)
+2026.01.07 18:51:24 ERROR Running process 'C:\Users\justi\AppData\Local\Coursier\data\bin\.scala-cli.aux.exe bsp --json-options C:\Users\justi\OneDrive\Desktop\Semester 3\.scala-build\ide-options-v2.json --json-launcher-options C:\Users\justi\OneDrive\Desktop\Semester 3\.scala-build\ide-launcher-options.json --envs-file C:\Users\justi\OneDrive\Desktop\Semester 3\.scala-build\ide-envs.json C:\Users\justi\OneDrive\Desktop\Semester 3' failed
+java.io.IOException: Cannot run program "C:\Users\justi\AppData\Local\Coursier\data\bin\.scala-cli.aux.exe" (in directory "C:\Users\Nikita\Desktop\Semester3\Semester_3"): CreateProcess error=2, Das System kann die angegebene Datei nicht finden
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1112)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1046)
+	at scala.meta.internal.process.SystemProcess$.run(SystemProcess.scala:48)
+	at scala.meta.internal.bsp.BspServers.newConnection$1(BspServers.scala:118)
+	at scala.meta.internal.bsp.BspServers.$anonfun$newServer$8(BspServers.scala:161)
+	at scala.meta.internal.metals.BuildServerConnection$.setupServer$1(BuildServerConnection.scala:631)
+	at scala.meta.internal.metals.BuildServerConnection$.fromSockets(BuildServerConnection.scala:700)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$17.applyOrElse(BuildServerConnection.scala:717)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$17.applyOrElse(BuildServerConnection.scala:714)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.lang.Thread.run(Thread.java:1474)
+Caused by: java.io.IOException: CreateProcess error=2, Das System kann die angegebene Datei nicht finden
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:485)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:146)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1078)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1046)
+	at scala.meta.internal.process.SystemProcess$.run(SystemProcess.scala:48)
+	at scala.meta.internal.bsp.BspServers.newConnection$1(BspServers.scala:118)
+	at scala.meta.internal.bsp.BspServers.$anonfun$newServer$8(BspServers.scala:161)
+	at scala.meta.internal.metals.BuildServerConnection$.setupServer$1(BuildServerConnection.scala:631)
+	at scala.meta.internal.metals.BuildServerConnection$.fromSockets(BuildServerConnection.scala:700)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$17.applyOrElse(BuildServerConnection.scala:717)
+	at scala.meta.internal.metals.BuildServerConnection$$anonfun$fromSockets$17.applyOrElse(BuildServerConnection.scala:714)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.lang.Thread.run(Thread.java:1474)
+
+2026.01.07 18:51:24 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Nikita\Desktop\Semester3\Semester_3\.metals\bsp.trace.json or C:\Users\Nikita\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2026.01.07 18:52:19 INFO  Shutting down server
+2026.01.07 18:52:19 INFO  shutting down Metals
+2026.01.07 18:52:19 INFO  Exiting server
