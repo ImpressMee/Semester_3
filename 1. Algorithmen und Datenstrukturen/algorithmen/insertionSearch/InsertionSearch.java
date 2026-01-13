@@ -28,9 +28,9 @@ import java.util.Random;
 public class InsertionSearch {
 
     static int zuweisungen = 0;
-    static int vergleiche = 0;
+    public static int vergleiche = 0;
 
-    private static void insertionSearch(int[] nums) {
+    public static void insertionSearch(int[] nums) {
         vergleiche = 0;
         zuweisungen = 0;
         // Starte am Index 1

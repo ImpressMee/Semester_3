@@ -1,38 +1,46 @@
 package heapsort;
 
 public class Heapsort {
+
     /** zählt nur Schlüsselvergleiche
      * parent(i) = (i - 1) / 2
      * left(i) = 2*i + 1
      * right(i) = 2*i + 2
-    **/
-    private static int comparisons = 0;
+     */
 
-    public static void heapify(int[] a, int heapSize, int pos){
+    public static int comparisons = 0;
+
+    public void reset(){
+        comparisons = 0;
+    }
+
+    public static void heapify(Node[] a, int heapSize, int pos) {
         int largest = pos;
 
-        int left = 2 * pos + 1;
-        int right = 2 * pos + 2;
+        int left  = 2 * pos;
+        int right = left + 1;
 
-        // Prüfe das Linke Kind
-        if(left < heapSize) {
+        // Linkes Kind prüfen
+        if (left < heapSize) {
             comparisons++;
-            if(a[left] > a[largest]) {
+            if (a[left].key > a[largest].key) {
                 largest = left;
             }
         }
 
-        // Prüfe das Rechts Kind
-        if(right < heapSize) {
+        // Rechtes Kind prüfen
+        comparisons++;
+        if (right < heapSize) {
             comparisons++;
-            if(a[right] > a[largest]) {
+            if (a[right].key > a[largest].key) {
                 largest = right;
             }
         }
 
-        // Falls Heap verletzt, tauschen und rekursiv reparieren
-        if(largest != pos) {
-            int temp = a[pos];
+        // Falls Heap-Eigenschaft verletzt
+        comparisons++;
+        if (largest != pos) {
+            Node temp = a[pos];
             a[pos] = a[largest];
             a[largest] = temp;
 
@@ -40,35 +48,34 @@ public class Heapsort {
         }
     }
 
-    public static void buildHeap(int[] arr) {
-        int n = arr.length;
+    public static void buildHeap(Node[] a) {
+        int n = a.length;
 
-        // letzter innere Knoten
-        // n/2 -1 weil alle Indizes welche größer als n/2 sind, sind automatisch heaps
-        for(int i = n / 2 - 1; i >= 0; i--){
-            heapify(arr,n,i);
+        // letzter innerer Knoten
+        for (int i = n / 2 - 1; i >= 0; i--) {
+            heapify(a, n, i);
         }
     }
 
-    public static void sort(int[] arr) {
+    public static void heap_sort(Node[] a) {
         comparisons = 0;
-        buildHeap(arr);
+        buildHeap(a);
 
-                for (int end = arr.length - 1; end > 0; end--) {
+        for (int end = a.length - 1; end > 0; end--) {
 
-            // Tausche Maximum (Wurzel) ans Ende
-            int temp = arr[0];
-            arr[0] = arr[end];
-            arr[end] = temp;
+            // Maximum ans Ende tauschen
+            Node temp = a[0];
+            a[0] = a[end];
+            a[end] = temp;
 
             // Heap-Eigenschaft wiederherstellen
-            heapify(arr, end, 0);
+            heapify(a, end, 0);
         }
     }
 
-        public static long getComparisons() {
+
+
+    public static int getComparisons() {
         return comparisons;
     }
-
-
 }
